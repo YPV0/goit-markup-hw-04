@@ -130,6 +130,12 @@ img {
 /* ============================= MAIN =============================*/
 
 .hero {
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/bgimg.jpg);
+  background-size: cover;
   background-color: var(--main-color);
   padding: 188px 0;
 }
@@ -188,6 +194,18 @@ img {
 .feature {
   width: 264px;
 }
+.feature-link {
+  display: block;
+  background-color: var(--additional-background-color);
+  padding: 24px 0;
+}
+
+.feature-icon {
+  display: block;
+  width: 60px;
+  height: 64px;
+  margin: 0 auto;
+}
 
 .feature .section-subtitle {
   margin-bottom: 8px;
@@ -235,6 +253,56 @@ img {
   margin-bottom: 8px;
 }
 
+.team-social {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.team-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--main-btn-logo-txt-color);
+}
+
+.team-social-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+
+.customers {
+  padding: 120px 0;
+}
+.customers-title {
+  margin-bottom: 72px;
+  color: var(--main-color);
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.customer-link {
+  display: block;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.customer-icon {
+  display: block;
+  width: 104px;
+  height: 56px;
+}
+
 /* ============================= /MAIN =============================*/
 /* ============================= FOOTER =============================*/
 footer {
@@ -242,10 +310,36 @@ footer {
   padding: 100px 0;
 }
 
+footer .container {
+  display: flex;
+  gap: 120px;
+}
+
 .footer-text {
   color: var(--footer-text-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
+}
+
+.footer-social {
+  color: var(--secondary-color);
+  margin-bottom: 16px;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #434455;
 }
 
 .footer-logo {
@@ -253,8 +347,9 @@ footer {
   margin-bottom: 16px;
 }
 
-.footer-text {
-  width: 264px;
+.footer-social-icon {
+  width: 24px;
+  height: 24px;
 }
 /* ============================= FOOTER =============================*/
 
