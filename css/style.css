@@ -198,6 +198,7 @@ img {
   display: block;
   background-color: var(--additional-background-color);
   padding: 24px 0;
+  margin-bottom: 8px;
 }
 
 .feature-icon {
