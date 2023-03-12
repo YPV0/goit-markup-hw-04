@@ -270,10 +270,16 @@ img {
   background-color: var(--main-btn-logo-txt-color);
 }
 
+.team-social-link:hover,
+.team-social-link:focus {
+  background-color: #404bbf;
+}
+
 .team-social-icon {
   display: block;
   width: 16px;
   height: 16px;
+  fill: var(--additional-background-color);
 }
 
 .customers {
@@ -290,9 +296,13 @@ img {
   gap: 24px;
 }
 
+.customer {
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+
 .customer-link {
   display: block;
-  border: 1px solid #8e8f99;
   border-radius: 4px;
   padding: 16px 32px;
 }
@@ -301,6 +311,15 @@ img {
   display: block;
   width: 104px;
   height: 56px;
+  fill: #8e8f99;
+}
+
+.customer:hover {
+  border: 1px solid #404bbf;
+}
+
+.customer:hover .customer-icon {
+  fill: #404bbf;
 }
 
 /* ============================= /MAIN =============================*/
@@ -342,6 +361,11 @@ footer .container {
   background-color: #434455;
 }
 
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: #31d0aa;
+}
+
 .footer-logo {
   display: block;
   margin-bottom: 16px;
@@ -350,6 +374,7 @@ footer .container {
 .footer-social-icon {
   width: 24px;
   height: 24px;
+  fill: var(--additional-background-color);
 }
 /* ============================= FOOTER =============================*/
 
@@ -371,6 +396,7 @@ footer .container {
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   padding: 12px 24px;
+
   color: var(--main-btn-logo-txt-color);
   font-weight: 500;
   line-height: 1.5;
@@ -382,6 +408,10 @@ footer .container {
 .menu-button:focus {
   background-color: var(--link-hover-color);
   color: var(--secondary-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  border: 1px solid #404bbf;
 }
 
 .cards-grid {
@@ -392,6 +422,12 @@ footer .container {
 
 .grid-card:not(:nth-of-type(n + 7)) {
   margin-bottom: 48px;
+}
+.grid-card:hover,
+.grid-card:focus {
+  border: #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .grid-card-content {
